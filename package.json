@@ -1,7 +1,7 @@
 {
   "name": "buildweb",
   "version": "1.0.6",
-  "description": "A simple helper to execute scripts that will do something for your project.",
+  "description": "A lightweight helper to execute website build scripts.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

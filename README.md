@@ -1,7 +1,3 @@
-# buildweb
-
-`buildweb` is a lightweight helper to execute website build scripts.
-
 ### Installation
 You can simply install this package using [npm](http://npmjs.com/) package manager.
 ```
