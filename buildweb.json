@@ -1,12 +1,13 @@
 {
-     "frontend": {
-         "css": {
-             "filename": "lessc",
-             "arguments": [
-                 "path/to/file.less",
-                 "-o",
-                 "path/to/file.css"
-             ]
-         }
-     }
+  "frontend": {
+    "css": {
+      "filename": "minifyjs",
+      "arguments": [
+        "-ml2i",
+        "index.js",
+        "-o",
+        "index.min.js"
+      ]
+    }
+  }
 }
