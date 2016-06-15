@@ -1,6 +1,6 @@
 {
   "name": "buildweb",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple helper to execute scripts that will do something for your project.",
   "main": "index.js",
   "scripts": {
