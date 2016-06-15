@@ -1,13 +1,50 @@
 {
-  "frontend": {
-    "css": {
-      "filename": "minifyjs",
-      "arguments": [
-        "-ml2i",
-        "index.js",
-        "-o",
-        "index.min.js"
+  "modules": {
+    "frontend": {
+      "settings": {
+        "base_path": "themes/frontend/default/_resources"
+      },
+      "actions": [
+        "browserify",
+        "minifyjs",
+        "lessc"
+      ]
+    },
+    "backend": {
+      "settings": {
+        "base_path": "themes/backend/default/_resources"
+      },
+      "actions": [
+        "browserify",
+        "minifyjs",
+        "lessc"
       ]
     }
-  }
+  },
+  "actions": [
+    {
+      "name": "browserify",
+      "file": "browserify",
+      "sync": true,
+      "args": [
+        "{base_path}/js/all.js -o {base_path}/js/all.bundle.js"
+      ]
+    },
+    {
+      "name": "minifyjs",
+      "file": "minifyjs",
+      "sync": true,
+      "args": [
+        "-ml2i {base_path}/js/all.bundle.js -o {base_path}/js/all.min.js"
+      ]
+    },
+    {
+      "name": "lessc",
+      "file": "lessc",
+      "sync": true,
+      "args": [
+        "{base_path}/css/all.less {base_path}/css/all.css"
+      ]
+    }
+  ]
 }

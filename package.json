@@ -1,6 +1,6 @@
 {
   "name": "buildweb",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple helper to execute scripts that will do something for your project.",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tyurderi/buildweb-js/issues"
+  },
+  "bin": {
+    "buildweb": "./buildweb",
+    "bw": "./buildweb"
   }
 }
